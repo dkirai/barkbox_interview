@@ -1,0 +1,12 @@
+{   "dog_name": "TJ",
+    "email": "Kiraidoreen72@gmail.com",
+    "mailingAddress": {
+        "first_name": "John",
+        "last_name": "Doe",
+        "street":  "409 Fair St",
+        "city" : "Carmel",
+        "state": "NY",
+        "zip_code": "10512"
+    }
+
+}
