@@ -88,12 +88,8 @@ def assert_tax(browser):
     tax = browser.find_element(By.CSS_SELECTOR, ".desktop-display > #summary .tax > .value > p").text
     expected_tax = re.sub(r"[^.0-9]+", '', tax)
     final_cost = float(re.sub(r"[^.0-9]+", '', cost))
-    print(expected_tax)
-    print(final_cost)
     actual_tax = final_cost/8.875
-    print(actual_tax)
-    if actual_tax == expected_tax:
-        print("TestPAss ")
+    assert actual_tax == expected_tax
 
 
 @when("I select super chewer")
